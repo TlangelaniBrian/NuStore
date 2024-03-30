@@ -27,9 +27,6 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - name: ACTIONS_ALLOW_UNSECURE_COMMANDS
-        run: echo 'ACTIONS_ALLOW_UNSECURE_COMMANDS=true' >> $GITHUB_ENV
-
       - name: Deploy to AWS
         uses: chrislennon/action-aws-cli@v1.1
         with:

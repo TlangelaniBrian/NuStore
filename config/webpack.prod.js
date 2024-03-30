@@ -9,7 +9,7 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
-        publicPath: '/NuStore/latest/',
+        publicPath: '/nustore/lastest/',
     },
     plugins: [
         new ModulefederationPlugin({
